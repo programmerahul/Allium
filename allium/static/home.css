@@ -1,0 +1,326 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  width: 100%;
+  height: 100%;
+}
+ 
+nav{
+  background-color: black;
+  color : white;
+  padding :20px 50px ;
+}
+
+.navTop{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.description{
+  text-align: center;
+}
+.texts{
+  color:#2f2e2e;
+}
+.home{
+  margin-top: 15px;
+}
+
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.main{
+  height:600px;
+  width:100%;
+  margin-bottom: 50px;
+  
+}
+
+.device1{
+  display: flex;
+  justify-content: center;
+  
+}
+.device2 {
+  background-color: rgb(228, 222, 222);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+   clip-path: polygon(0 10%, 100% 1%, 100% 100%, 0 88%);  /* Commented out or removed */
+  background-image: url('https://img.freepik.com/free-vector/man-farmer-work-corn-field-maize-meadow-crop_107791-15081.jpg?w=1380&t=st=1701804416~exp=1701805016~hmac=28dcb1cead20e8cca774b1ba0c27ff910db08b9fc54310fa756a01de9799e3bf');
+  background-repeat: no-repeat;
+  background-size: cover; /* Adjust the background size as needed to cover the entire div */
+  overflow: hidden;
+}
+
+.button-50 {
+appearance: button;
+background-color:#7f8924;
+background-image: none;
+border: 5px solid #008000;
+border-radius: 4px;
+box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+box-sizing: border-box;
+color: #fff;
+cursor: pointer;
+display: inline-block;
+font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+margin: 250px 5px 200px 0;
+overflow: visible;
+padding: 12px 40px;
+text-align: center;
+text-transform: none;
+touch-action: manipulation;
+user-select: none;
+-webkit-user-select: none;
+vertical-align: middle;
+white-space: nowrap;
+height: 150px;
+width: 250px;
+justify-content: center;
+}
+
+.button-50:focus {
+text-decoration: none;
+}
+
+.button-50:hover {
+text-decoration: none;
+}
+
+.button-50:active {
+box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+outline: 0;
+}
+
+.button-50:not([disabled]):active {
+box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+transform: translate(2px, 2px);
+}
+
+
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .navTop {
+    flex-direction: column; /* Stack nav elements vertically */
+    align-items: center; /* Center nav items */
+  }
+
+  nav {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .main {
+    height: auto; /* Set height to auto for smaller screens */
+    margin-bottom: 20px; /* Reduce margin for smaller screens */
+  }
+
+  .device2 {
+    margin-top: 20px; /* Adjust margin for smaller screens */
+    height: 400px; /* Adjust height for smaller screens */
+  }
+
+  .button-50 {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    padding: 8px 20px; /* Adjust button padding for smaller screens */
+  }
+  
+  .main2{
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .device{
+    width:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-box{
+    width:80%;
+  }
+  .main{
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .device2{
+    width: 100%;
+    display: flex;
+    /* flex-direction: column;
+    /* justify-content: center;
+    align-items:center; */
+  }
+  .button-50{
+    height:30%;
+    width:20%;
+  }
+
+
+  /* Additional adjustments for other elements */
+}
+
+.main2{
+
+  height:1500px;
+  clip-path: polygon(0 0, 100% 1%, 99% 99%, 0 89%);
+}
+
+
+.device11{
+  position: absolute;
+  background-color: white;
+  flex:display;
+  align-items:center;
+  height:800px;
+  width:250px;
+  margin:0px auto;
+  background-image: url();
+}
+
+.project-box {
+    margin-left: 500px;
+    
+    width: 700px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    background-color: #7e8827;
+}
+
+h2 {
+color: #333;
+}
+
+p {
+color: #666;
+}
+
+.design-image {
+max-width: 100%;
+height: auto;
+margin-top: 20px;
+border-radius: 8px;
+}
+
+.site-footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  max-width: 100px;
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-right: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer-contact {
+  text-align: right;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.main2{
+  background-image: url('https://img.freepik.com/free-vector/two-wooden-cabins-forest_1308-73560.jpg?w=900&t=st=1701771550~exp=1701772150~hmac=e02106965a61c61c2b3f62375af719be02fb6d92f4df8fda87dfaece00653be4"');
+  background-size: cover; /* Ensures the image covers the entire viewport */
+  background-position: center; /* Centers the image within the viewport */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 800px; /* Ensures the body takes up the full height of the viewport */
+  margin: 0; /* Removes default margin */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
